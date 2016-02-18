@@ -1,0 +1,24 @@
+{
+    "author": "zangrafx <zangrafx@gmail.com>",
+    "dependencies": {
+    },
+    "description": "react-workshop",
+    "devDependencies": {
+        "gore-gulp": "0.x",
+        "gulp": "3.x",
+        "react": "0.14.x"
+    },
+    "directories": {
+        "dist": "dist",
+        "lib": "src"
+    },
+    "engines": {
+        "node": ">=0.12"
+    },
+    "main": "src",
+    "name": "react-workshop",
+    "scripts": {
+        "test": "gulp test"
+    },
+    "version": "0.0.0"
+}
