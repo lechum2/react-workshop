@@ -9,5 +9,5 @@
 "use strict";
 
 export default function () {
-    console.log("hello world from module");
+    console.log("hello world from module...");
 }
