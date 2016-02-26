@@ -7,7 +7,8 @@
  */
 
 "use strict";
-
+import React from "react";
+import ReactDOM from "react-dom";
 import SearchBox from "src/SearchBox/SearchBox";
 
-SearchBox();
+ReactDOM.render(<SearchBox />, document.getElementById("app"));
