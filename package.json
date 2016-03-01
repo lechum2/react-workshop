@@ -6,7 +6,8 @@
     "devDependencies": {
         "gore-gulp": "0.x",
         "gulp": "3.x",
-        "react": "0.14.x"
+        "react": "0.14.x",
+        "react-dom": "0.14.x"
     },
     "directories": {
         "dist": "dist",
