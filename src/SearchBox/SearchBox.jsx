@@ -24,7 +24,8 @@ export default React.createClass({
         //console.log(evt.target.value);
     },
     "filterPeople": function (list) {
-        return list.filter(person => person.name.indexOf(this.state.SearchValue) !== -1);
+        return list.filter(
+            person => person.name.toLowerCase().indexOf(this.state.SearchValue.toLowerCase()) !== -1);
     },
     "render": function () {
         var personList = this.filterPeople(this.props.data);
