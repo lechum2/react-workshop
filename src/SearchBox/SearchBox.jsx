@@ -3,6 +3,8 @@
  * For licensing, see LICENSE
  */
 
+/* eslint no-underscore-dangle: 0 */
+
 "use strict";
 
 import React from "react";
@@ -21,11 +23,15 @@ export default React.createClass({
         //this.state.SearchValue = evt.target.value;
         //console.log(evt.target.value);
     },
+    "filterPeople": function (list) {
+        return list.filter(person => person.name.indexOf(this.state.SearchValue) !== -1);
+    },
     "render": function () {
+        var personList = this.filterPeople(this.props.data);
         return (
             <div>
                 <input onChange={this.handleChange} type="text" />
-                <Result text={this.state.SearchValue} />
+                {personList.map(person => <Result key={person._id} person={person} />)}
             </div>
         );
     }

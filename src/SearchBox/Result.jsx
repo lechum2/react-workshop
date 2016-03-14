@@ -15,7 +15,7 @@ export default React.createClass({
     },
     "render": function () {
         return (
-            <p>{this.props.text}</p>
+            <p>{this.props.person.name}</p>
         );
     }
 });

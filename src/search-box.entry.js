@@ -11,4 +11,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import SearchBox from "src/SearchBox/SearchBox";
 
-ReactDOM.render(<SearchBox />, document.getElementById("app"));
+var data = JSON.parse(document.getElementById("data").textContent);
+
+ReactDOM.render(<SearchBox data={data} />, document.getElementById("app"));
