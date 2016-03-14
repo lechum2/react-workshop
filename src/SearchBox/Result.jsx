@@ -8,9 +8,14 @@
 import React from "react";
 
 export default React.createClass({
+    "getDefaultProps": function () {
+        return {
+            "text": "No results"
+        };
+    },
     "render": function () {
         return (
-            <p>Result</p>
+            <p>{this.props.text}</p>
         );
     }
 });
