@@ -6,15 +6,11 @@
 "use strict";
 
 import React from "react";
-import Result from "src/SearchBox/Result";
 
 export default React.createClass({
     "render": function () {
         return (
-            <div>
-                <input type="text" />
-                <Result />
-            </div>
+            <p>Result</p>
         );
     }
 });
